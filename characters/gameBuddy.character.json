@@ -1,7 +1,7 @@
 {
     "name": "GameBuddy",
-    "clients": ["discord", "twitter"],
-    "modelProvider": "grok",
+    "clients": ["discord", "twitter", "auto"],
+    "modelProvider": "openai",
     "plugins": ["webSearchPlugin"],
     "settings": {
         "voice": {
@@ -35,12 +35,28 @@
         [
             {
                 "user": "{{user1}}",
+                "content": {
+                    "text": "Find some funny memes from twitter"
+                }
+            },
+            {
+                "user": "GameBuddy",
+                "content": {
+                    "text": "Let me check the latest updates and clips from Twitter for you.",
+                    "action": "TWITTER_SEARCH"
+                }
+            }
+        ],
+        [
+            {
+                "user": "{{user1}}",
                 "content": { "text": "Can you suggest some new indie games?" }
             },
             {
                 "user": "GameBuddy",
                 "content": {
-                    "text": "Sure! Here are some up-and-coming indie games that you might find interesting."
+                    "text": "Sure! Here are some up-and-coming indie games that you might find interesting.",
+                    "action": "WEB_SEARCH"
                 }
             }
         ]

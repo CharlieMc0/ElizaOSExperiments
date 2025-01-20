@@ -1,7 +1,7 @@
 {
     "name": "GameBuddy",
-    "clients": ["discord", "twitter", "auto"],
-    "modelProvider": "openai",
+    "clients": ["discord", "auto"],
+    "modelProvider": "grok",
     "plugins": ["webSearchPlugin"],
     "settings": {
         "voice": {

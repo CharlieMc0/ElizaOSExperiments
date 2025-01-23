@@ -40,7 +40,7 @@ timeline_cache.json
 
 *.sqlite
 
-characters/
+characters/crypto.character.json
 
 packages/core/src/providers/cache
 packages/core/src/providers/cache/*
